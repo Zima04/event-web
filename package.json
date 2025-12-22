@@ -4,9 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build": "ng build --configuration production --base-href /event-web/",
+    "deploy": "npx angular-cli-ghpages --dir=dist/event-web "
   },
   "private": true,
   "dependencies": {
@@ -29,8 +30,6 @@
     "bootstrap": "^5.3.8",
     "ngx-bootstrap": "^10.2.0",
     "ngx-countdown": "^15.0.0",
-    "primeicons": "^6.0.1",
-    "primeng": "^15.2.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"

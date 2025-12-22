@@ -37,7 +37,7 @@ export class DateCounterComponent {
     return `
       <div class="d-flex">
         <div class="d-flex flex-column justify-content-center align-items-center">
-            <div class="fs-72">
+            <div class="fs-72 pb-2">
               ${days}
             </div>
             <div class="fs-20">
@@ -46,7 +46,7 @@ export class DateCounterComponent {
         </div>
         <span class="fs-72 px-2">:</span>
         <div class="d-flex flex-column justify-content-center align-items-center">
-            <div class="fs-72">
+            <div class="fs-72 pb-2">
              ${hh}
             </div>
             <div class="fs-20">
@@ -55,7 +55,7 @@ export class DateCounterComponent {
         </div>
          <span class="fs-72 px-2">:</span>
          <div class="d-flex flex-column justify-content-center align-items-center">
-            <div class="fs-72">
+            <div class="fs-72 pb-2">
              ${mm}
             </div>
             <div class="fs-20">
@@ -64,7 +64,7 @@ export class DateCounterComponent {
         </div>
          <span class="fs-72 px-2">:</span>
           <div class="d-flex flex-column justify-content-center align-items-center">
-            <div class="fs-72">
+            <div class="fs-72 pb-2">
              ${ss}
             </div>
             <div class="fs-20">

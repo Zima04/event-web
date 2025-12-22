@@ -11,6 +11,73 @@
   }
 }
 
+.wishes-section-2{
+  position: relative;
+  top: -50px;
+}
+
+.wishes-section-3{
+  position: relative;
+  top: -50px;
+}
+
+.wishes-image-container-1{
+  position: relative;
+  justify-content: center;
+
+  img {
+    max-height: 160px;
+  }
+}
+
+.wishes-image-container-2{
+  position: relative;
+  justify-content: center;
+
+  img {
+    max-height: 120px;
+  }
+}
+
+.wishes-image-container-2{
+  position: relative;
+  justify-content: center;
+
+  img {
+    max-height: 202px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .wishes-image-container-1 {
+    right: 80px;
+
+    img {
+
+      height: 160px !important;
+    }
+  }
+
+  .wishes-image-container-2 {
+    left: 60px;
+    //left: -40px !important;
+
+    img {
+      height: 120px !important;
+    }
+  }
+
+  .wishes-image-container-3 {
+    position: absolute;
+    left: auto!important;
+
+    img {
+      height: 202px !important;
+    }
+  }
+}
+
+
 .index{
   z-index: 99;
 }
