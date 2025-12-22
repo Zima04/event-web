@@ -1,0 +1,50 @@
+.title-container {
+  //min-height: 100vh;
+  justify-content: space-around;
+}
+
+.wife-image-container {
+  //width: 330px;
+  position: relative;
+  left: 40px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.husband-image-container {
+  //width: 360px;
+  position: relative;
+  right: 40px;
+  //position: absolute;
+  //top: 0px;
+  //right: 74px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.ampersand{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  position: relative;
+  right: 20px;
+}
+
+.husband-title{
+  position: relative;
+  //bottom: 60px;
+  //left: 60px;
+}
+
+

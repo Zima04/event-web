@@ -1,0 +1,16 @@
+.wishes-image-container{
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.index{
+  z-index: 99;
+}
