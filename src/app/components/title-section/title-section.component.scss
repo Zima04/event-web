@@ -4,9 +4,9 @@
 }
 
 .wife-image-container {
-  //width: 330px;
+  z-index: 9;
   position: relative;
-  left: 40px;
+  left: 35px;
 
   img {
     width: 100%;
@@ -17,12 +17,8 @@
 }
 
 .husband-image-container {
-  //width: 360px;
   position: relative;
-  right: 40px;
-  //position: absolute;
-  //top: 0px;
-  //right: 74px;
+  right: 35px;
 
   img {
     width: 100%;
@@ -43,8 +39,21 @@
 
 .husband-title{
   position: relative;
-  //bottom: 60px;
-  //left: 60px;
 }
 
+@media screen and (max-width: 680px) {
+  .wife-title {
+    position: relative;
+    left: 80px;
+  }
 
+  .husband-title {
+    position: relative;
+    right: 30px;
+  }
+
+  .ampersand{
+    height: 0 !important;
+    left: 60px !important;
+  }
+}
