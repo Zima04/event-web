@@ -9,31 +9,43 @@
   font-size: 40px;
 }
 
-.line{
+.line {
   position: absolute;
   top: 135px;
-  z-index:99
+  z-index: 99
 }
 
 .central-date {
-  max-height: 100px;
+  height: 100px;
+  width: 100px;
 
-  img {
-    height: 100px
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
   }
 }
 
 .section-container {
-  min-height: 300px;
+  padding-top: 24px;
+  min-height: 200px;
   justify-content: center;
   position: relative;
 }
 
-.index{
+.section-container2 {
+  padding-top: 24px;
+  min-height: 200px;
+  justify-content: center;
+  position: relative;
+}
+
+.index {
   z-index: 99;
 }
 
-.second-section{
+.second-section {
   position: relative;
   top: -100px;
 }
@@ -43,7 +55,7 @@
   position: relative;
   justify-content: center;
 
-  img{
+  img {
     max-height: 300px;
   }
 }
@@ -53,8 +65,9 @@
   justify-content: center;
   left: -60px;
 
-  img{
+  img {
     max-height: 420px;
+
   }
 }
 
@@ -63,7 +76,67 @@
   justify-content: center;
   left: -60px;
 
-  img{
+  img {
     max-height: 600px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .date-container{
+    height: 40px !important;
+    width: 40px !important;
+    font-size: 20px !important;
+  }
+
+  .central-date{
+    height: 65px !important;
+    width: 65px !important;
+  }
+
+  .line {
+    top: 96px !important;
+    left: 27px  !important;;
+  }
+
+  .schedule-image-container-1 {
+    img {
+      max-height: 181px !important;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .schedule-image-container-2 {
+    top: -60px !important;
+    left: -40px !important;
+    img {
+      max-height: 220px  !important;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .schedule-image-container-3 {
+    position: absolute;
+    right: -50px!important;
+    left: auto!important;
+
+    img {
+      max-height: 342px !important;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .schedule-text-container-3 {
+    position: relative;
+    right: -40px !important;
+    top: 60px !important;
   }
 }
