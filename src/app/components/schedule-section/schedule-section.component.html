@@ -1,32 +1,35 @@
 <div class="d-flex flex-column align-items-center col-12 position-relative">
   <span class="pb-2 marck fs-48 text-primary">Наш апрель</span>
-  <img src="assets/images/line-mobile.svg" class="line" [attr.data-aos]="'fade-up'" data-aos-duration="3200" data-aos-anchor-placement="center-bottom">
+  <img src="assets/images/line-mobile.svg" class="d-block d-md-none line">
+  <img src="assets/images/line.svg" class="d-none d-md-block line-desktop">
   <div class="col-12 px-4 d-flex justify-content-around align-items-center">
-    <div class="date-container marck"  [attr.data-aos]="'fade-left'" data-aos-duration="3000">
+    <div class="date-container marck" [attr.data-aos]="'fade-left'" data-aos-duration="3000">
       23
     </div>
-    <div class="date-container marck"  [attr.data-aos]="'fade-left'" data-aos-duration="3000">
+    <div class="date-container marck" [attr.data-aos]="'fade-left'" data-aos-duration="3000">
       24
     </div>
     <div class="central-date">
       <img src="assets/images/heart.png">
     </div>
-    <div class="date-container marck"  [attr.data-aos]="'fade-right'" data-aos-duration="3000">
+    <div class="date-container marck" [attr.data-aos]="'fade-right'" data-aos-duration="3000">
       26
     </div>
-    <div class="date-container marck"  [attr.data-aos]="'fade-right'" data-aos-duration="3000">
+    <div class="date-container marck" [attr.data-aos]="'fade-right'" data-aos-duration="3000">
       27
     </div>
   </div>
   <div class="col-12 d-flex section-container2" [attr.data-aos]="'fade-right'" data-aos-duration="3000">
-    <div class="d-flex flex-column justify-content-center col-6 index">
+    <div class="d-flex flex-column justify-content-center col-6 z-index-99">
       <span class="marck fs-50 text-end text-primary">14:40</span>
       <span class="marck fs-50 text-end">Сбор гостей</span>
-      <span class="pt-2 fs-20 mulish">
-        Время пролетит незаметно<br>
-        за игристым и общением<br>
-        с другими гостями.
-      </span>
+      <div class="d-flex justify-content-end">
+          <span class="pt-2 fs-20 mulish-light">
+          Время пролетит незаметно<br>
+          за игристым и общением<br>
+          с другими гостями.
+        </span>
+      </div>
     </div>
     <div class="d-flex flex-column">
       <div class="schedule-image-container-1">
@@ -34,27 +37,32 @@
       </div>
     </div>
   </div>
-  <div class="col-12 d-flex row section-container"  [attr.data-aos]="'fade-left'" data-aos-duration="3000">
+  <div class="col-12 d-flex row section-container" [attr.data-aos]="'fade-left'" data-aos-duration="3000">
     <div class="d-flex flex-column col-6 ">
       <div class="schedule-image-container-2">
         <img src="assets/images/picture_2.png">
       </div>
     </div>
-    <div class="d-flex flex-column col-6 index">
-      <span class="marck fs-50 text-end text-primary">16:00</span>
-      <span class="marck fs-50 text-end">Церемония</span>
-      <span class="pt-3 fs-20 mulish">
-        На всякий случай<br> приготовьте носовые<br> платочки для<br> трогательного момента.
-      </span>
+    <div class="d-flex flex-column col-6 z-index-99">
+      <span class="marck fs-50 text-start text-primary">16:00</span>
+      <span class="marck fs-50 text-start">Церемония</span>
+      <div class="d-flex justify-content-start">
+           <span class="pt-2 fs-20 mulish-light">
+              На всякий случай приготовьте<br> носовые платочки для<br> трогательного момента.
+            </span>
+      </div>
     </div>
   </div>
-  <div class="col-12 d-flex row section-container second-section" [attr.data-aos]="'fade-right'" data-aos-duration="3000">
-    <div class="d-flex flex-column justify-content-center col-6 index schedule-text-container-3">
+  <div class="col-12 d-flex row section-container second-section" [attr.data-aos]="'fade-right'"
+       data-aos-duration="3000">
+    <div class="d-flex flex-column justify-content-center col-6 z-index-99 schedule-text-container-3">
       <span class="marck fs-50 text-end pt-2 text-primary">17:00</span>
       <span class="marck fs-50 text-end">Начало банкета</span>
-      <span class="pt-3 fs-20 mulish">
+      <div class="d-flex justify-content-end">
+          <span class="pt-2 fs-20 mulish-light">
        Вкусные блюда и веселая<br> программа от нашего крутого<br> ведущего.
       </span>
+      </div>
     </div>
     <div class="d-flex flex-column col-6 ">
       <div class="schedule-image-container-3">

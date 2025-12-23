@@ -1,3 +1,7 @@
+.wishes-container{
+  height: 900px;
+}
+
 .wishes-image-container{
   overflow: hidden;
   position: relative;
@@ -18,39 +22,54 @@
 
 .wishes-section-3{
   position: relative;
-  top: -50px;
+  top: -200px;
 }
 
 .wishes-image-container-1{
   position: relative;
   justify-content: center;
+  right: 110px;
 
   img {
-    max-height: 160px;
+    max-height: 300px;
   }
 }
 
 .wishes-image-container-2{
   position: relative;
   justify-content: center;
+  left: 70px;
 
   img {
-    max-height: 120px;
+    max-height: 220px;
   }
 }
 
-.wishes-image-container-2{
+.wishes-image-container-3{
   position: relative;
   justify-content: center;
 
   img {
-    max-height: 202px;
+    max-height: 380px;
   }
 }
 
 @media screen and (max-width: 680px) {
+  .wishes-container{
+    height: auto !important;
+  }
+
+  .wishes-section-2{
+    top: -50px!important;
+  }
+
+  .wishes-section-3{
+    position: relative;
+    top: -50px!important;
+  }
+
   .wishes-image-container-1 {
-    right: 80px;
+    right: 80px!important;
 
     img {
 
@@ -59,8 +78,7 @@
   }
 
   .wishes-image-container-2 {
-    left: 60px;
-    //left: -40px !important;
+    left: 60px!important;
 
     img {
       height: 120px !important;
@@ -75,9 +93,4 @@
       height: 202px !important;
     }
   }
-}
-
-
-.index{
-  z-index: 99;
 }

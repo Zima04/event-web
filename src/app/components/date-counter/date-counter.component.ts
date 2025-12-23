@@ -40,7 +40,7 @@ export class DateCounterComponent {
             <div class="fs-72 pb-2">
               ${days}
             </div>
-            <div class="fs-20">
+            <div class="fs-20 mulish-light">
               дней
             </div>
         </div>
@@ -49,7 +49,7 @@ export class DateCounterComponent {
             <div class="fs-72 pb-2">
              ${hh}
             </div>
-            <div class="fs-20">
+            <div class="fs-20 mulish-light">
               часов
             </div>
         </div>
@@ -58,7 +58,7 @@ export class DateCounterComponent {
             <div class="fs-72 pb-2">
              ${mm}
             </div>
-            <div class="fs-20">
+            <div class="fs-20 mulish-light">
               минут
             </div>
         </div>
@@ -67,7 +67,7 @@ export class DateCounterComponent {
             <div class="fs-72 pb-2">
              ${ss}
             </div>
-            <div class="fs-20">
+            <div class="fs-20 mulish-light">
               секунд
             </div>
         </div>

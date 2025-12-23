@@ -15,6 +15,7 @@ $secondary: #F3EEE8;
   color: #740D1D;
 
   &:hover {
+    color: #F3EEE8;
     background-color: #740D1D;
   }
 
@@ -46,13 +47,52 @@ $secondary: #F3EEE8;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Mulish-Light';
+  src: url('assets/fonts/Mulish-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Majestic';
+  src: url('assets/fonts/Majestic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Isadora';
+  src: url('assets/fonts/Isadora.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 .cherish {
   color: #740D1D;
   font-family: 'Cherish', cursive;
 }
 
+.isadora {
+  color: #740D1D;
+  font-family: 'Isadora', sans-serif;
+}
+
+.majestic {
+  color: #740D1D;
+  font-family: 'Majestic', sans-serif;
+}
+
 .mulish {
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Mulish-SemiBold', sans-serif;
+}
+
+.mulish-extra-light {
+  font-family: 'Mulish-ExtraLight', sans-serif;
+}
+
+.mulish-light {
+  font-family: 'Mulish-Light', sans-serif;
 }
 
 .marck {
@@ -82,7 +122,7 @@ $secondary: #F3EEE8;
 
   .fs-50 {
     font-size: 26px !important;
-    line-height: 26px !important;
+    line-height: 32px !important;
   }
 
   .fs-64 {
@@ -122,14 +162,17 @@ $secondary: #F3EEE8;
 
 .fs-24 {
   font-size: 24px;
+  line-height: 24px;
 }
 
 .fs-40 {
   font-size: 40px;
+  line-height: 40px;
 }
 
 .fs-48 {
   font-size: 48px;
+  line-height: 48px;
 }
 
 .fs-50 {
@@ -138,15 +181,22 @@ $secondary: #F3EEE8;
 }
 
 .fs-64 {
-  font-size: 64px
+  font-size: 64px;
+  line-height: 64px;
 }
 
 .fs-128 {
-  font-size: 128px
+  font-size: 128px;
+  line-height: 128px;
 }
 
 .fs-100 {
-  font-size: 100px
+  font-size: 100px;
+  line-height: 100px;
+}
+
+.z-index-99{
+  z-index: 99;
 }
 
 
