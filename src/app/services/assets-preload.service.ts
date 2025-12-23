@@ -26,10 +26,10 @@ export class AssetsPreloadService {
     return Promise.all(promises);
   }
 
-  public preloadAll(imageUrls: string[],fonts: string[]): Promise<void> {
+  public preloadAll(imageUrls: string[],fonts: string[]): any{
     return Promise.all([
       this.preloadFonts(fonts),
       this.preloadImages(imageUrls)
-    ]).then(() => {});
+    ])
   }
 }

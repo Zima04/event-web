@@ -27,13 +27,13 @@ export class AppComponent implements OnInit {
       'Cherish', 'Marck', 'Mulish', 'Mulish-Light', 'Majestic', 'Isadora'
     ];
 
-    await this.preloader.preloadAll(images,fonts);
-
-    AOS.init();
-    AOS.refresh();
-
-    window.addEventListener('scroll', () => {
+    await this.preloader.preloadAll(images,fonts).then(() => {
+      AOS.init();
       AOS.refresh();
-    }, { once: true });
+
+      window.addEventListener('scroll', () => {
+        AOS.refresh();
+      }, { once: true });
+    });
   }
 }
