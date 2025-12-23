@@ -16,15 +16,18 @@ export class AppComponent implements OnInit {
 
     setTimeout(()=>{
       this.loading = false;
-    },3000)
+    },4000)
 
-    // const images = [
-    //   '/assets/images/vlad.png',
-    //   '/assets/images/maria.png'
-    // ];
-    //
-    // await this.preloader.preloadAll(images);
-    // this.loading = false;
+    const images = [
+      '/assets/images/vlad.png',
+      '/assets/images/maria.png'
+    ];
+
+    const fonts = [
+      'Cherish', 'Marck', 'Mulish', 'Mulish-Light', 'Majestic', 'Isadora'
+    ];
+
+    await this.preloader.preloadAll(images,fonts);
 
     AOS.init();
     AOS.refresh();

@@ -11,3 +11,29 @@
     height: 250px;
   }
 }
+//
+//
+//.spinner {
+//  position: fixed;
+//  top: 50%;
+//  left: 50%;
+//  transform: translate(-50%, -50%);
+//  text-align: center;
+//  opacity: 1;
+//  transition: opacity 0.5s ease;
+//  z-index: 9999;
+//  pointer-events: none;
+//}
+//.spinner.loaded {
+//  opacity: 0;
+//  visibility: hidden;
+//}
+//
+///* Контент приложения */
+//.app-content {
+//  opacity: 0;
+//  transition: opacity 0.5s ease;
+//}
+//.app-content.loaded {
+//  opacity: 1;
+//}

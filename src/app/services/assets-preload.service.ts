@@ -7,7 +7,7 @@ export class AssetsPreloadService {
 
   constructor() {}
 
-  preloadImages(imageUrls: string[]): Promise<void[]> {
+  private preloadImages(imageUrls: string[]): Promise<void[]> {
     const promises = imageUrls.map(url =>
       new Promise<void>((resolve) => {
         const img = new Image();
@@ -19,13 +19,16 @@ export class AssetsPreloadService {
     return Promise.all(promises);
   }
 
-  preloadFonts(): Promise<void> {
-    return document.fonts.ready.then(() => {});
+  private preloadFonts(fonts: string[] = []): Promise<void[]> {
+    const promises = fonts.map(f =>
+      (document as any).fonts.load(`1em ${f}`)
+    );
+    return Promise.all(promises);
   }
 
-  preloadAll(imageUrls: string[]): Promise<void> {
+  public preloadAll(imageUrls: string[],fonts: string[]): Promise<void> {
     return Promise.all([
-      this.preloadFonts(),
+      this.preloadFonts(fonts),
       this.preloadImages(imageUrls)
     ]).then(() => {});
   }
