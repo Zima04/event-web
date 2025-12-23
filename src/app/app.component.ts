@@ -11,5 +11,9 @@ export class AppComponent implements OnInit {
     // AOS.init({disable: 'mobile'});
     AOS.init();
     AOS.refresh();
+
+    window.addEventListener('scroll', () => {
+      AOS.refresh();
+    }, { once: true });
   }
 }
