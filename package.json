@@ -6,7 +6,7 @@
     "start": "ng serve",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build": "ng build --configuration production",
+    "build": "ng build event-web --configuration production"
     "build2": "ng build --configuration production --base-href /event-web/",
     "deploy": "npx angular-cli-ghpages --dir=dist/event-web "
   },
