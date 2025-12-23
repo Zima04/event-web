@@ -1,1 +1,6 @@
-<router-outlet></router-outlet>
+<div *ngIf="loading" class="spinner main-background">
+  <img src="assets/images/rings.gif">
+</div>
+<div *ngIf="!loading">
+  <router-outlet></router-outlet>
+</div>

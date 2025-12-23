@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import * as AOS from "aos";
+import {AssetsPreloadService} from "./services/assets-preload.service";
 
 @Component({
   selector: 'app-root',
@@ -7,8 +8,24 @@ import * as AOS from "aos";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  public ngOnInit() {
-    // AOS.init({disable: 'mobile'});
+  public loading = true;
+
+  constructor(private preloader: AssetsPreloadService) {}
+
+  async ngOnInit() {
+
+    setTimeout(()=>{
+      this.loading = false;
+    },3000)
+
+    // const images = [
+    //   '/assets/images/vlad.png',
+    //   '/assets/images/maria.png'
+    // ];
+    //
+    // await this.preloader.preloadAll(images);
+    // this.loading = false;
+
     AOS.init();
     AOS.refresh();
 
