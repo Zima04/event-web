@@ -7,10 +7,6 @@ import {BsDropdownModule} from "ngx-bootstrap/dropdown";
 import {MatInputModule} from "@angular/material/input";
 import {FormsModule} from "@angular/forms";
 
-import { OrganizationChartModule } from 'primeng/organizationchart';
-import { TimelineModule } from 'primeng/timeline';
-import { CardModule } from 'primeng/card';
-import { ChipModule } from 'primeng/chip';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 import {TitleSectionComponent} from "./components/title-section/title-section.component";
@@ -46,10 +42,6 @@ import {GoodbyeCardComponent} from "./components/goodbye-card/goodbye-card.compo
     MatInputModule,
     FormsModule,
     BrowserAnimationsModule,
-    OrganizationChartModule,
-    TimelineModule,
-    CardModule,
-    ChipModule,
     CountdownModule
   ],
   providers: [],
