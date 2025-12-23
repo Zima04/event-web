@@ -225,10 +225,16 @@ a {
   }
 }
 
-@media screen and (max-width: 680px) {
-  [data-aos] {
-    pointer-events: auto !important;
-    opacity: 1 !important;
-    transform: none !important;
-  }
-}
+  //[data-aos] {
+  //  pointer-events: auto !important;
+  //  opacity: 1 !important;
+  //  transform: none !important;
+  //}
+
+//@media screen and (max-width: 680px) {
+//  [data-aos] {
+//    pointer-events: auto !important;
+//    opacity: 1 !important;
+//    transform: none !important;
+//  }
+//}

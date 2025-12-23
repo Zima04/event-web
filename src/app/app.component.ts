@@ -8,7 +8,8 @@ import * as AOS from "aos";
 })
 export class AppComponent implements OnInit {
   public ngOnInit() {
-    AOS.init({disable: 'mobile'});
+    // AOS.init({disable: 'mobile'});
+    AOS.init();
     AOS.refresh();
   }
 }
